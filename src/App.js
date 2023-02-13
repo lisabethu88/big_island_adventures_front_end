@@ -2,7 +2,7 @@ import React from "react";
 // Importing the Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button, Alert, Breadcrumb, BreadcrumbItem, Card, Form, FormGroup } from 'react-bootstrap'
-import ColorSchemesExample from "./components/Navbar";
+import TopNavBar from "./components/TopNavbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from './pages/Home'
 import EventsPage from './pages/EventsPage'
@@ -10,14 +10,14 @@ import NoPage from './pages/NoPage'
 import Client from './pages/Client'
 import ConfirmBooking from "./pages/ConfirmBooking"
 import BookingButton from "./components/BookingButton"
-import Login from "./components/Login"
-import SignUp from "./components/SignUp"
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
-    <ColorSchemesExample/>
+    <TopNavBar/>
     <BookingButton/>
       <Routes>
         <Route path="/" element={<Home />} />

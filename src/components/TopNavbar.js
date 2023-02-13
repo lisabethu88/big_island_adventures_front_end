@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from 'react-router-dom'
 import { Container, Navbar, Nav} from "react-bootstrap";
-const ColorSchemesExample = ()=> {
+const TopNavBar = ()=> {
   return (
     <>  
       <Navbar bg="dark" variant="dark">
@@ -28,7 +28,7 @@ const ColorSchemesExample = ()=> {
   );
 }
 
-export default ColorSchemesExample;
+export default TopNavBar;
 
 /* 
 const TopNav = () => {
