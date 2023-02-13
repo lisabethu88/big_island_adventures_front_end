@@ -1,7 +1,7 @@
 import React from "react";
 
-const LoginSignUp = () => {
-  return (<h1 className="login-signup-title">This is the Login Signup Page</h1>)
+const Login = () => {
+  return (<h1 className="login-signup-title">This is the Login Page</h1>)
 };
 
-export default LoginSignUp;
+export default Login;

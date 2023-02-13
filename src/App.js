@@ -11,7 +11,7 @@ import Client from './pages/Client'
 import ConfirmBooking from "./pages/ConfirmBooking"
 import BookingButton from "./components/BookingButton"
 import Login from "./components/Login"
-import Signup from "./components/Signup"
+import SignUp from "./components/SignUp"
 
 const App = () => {
   return (
@@ -24,10 +24,10 @@ const App = () => {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/client" element={<Client />} />
         <Route path="/confirm" element={<ConfirmBooking />} />
-        <Route path="*" element={<NoPage />} />
         <Route path="/events" element={<BookingButton />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup/>} />
+        <Route path="/signup" element={<SignUp/>} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
 
     </BrowserRouter>
