@@ -1,7 +1,8 @@
 import React from "react";
+import BookingButton from "../components/BookingButton"
 
 const Home = () => {
-  return (<h1 className="home-title">This is the Home Page</h1>)
+  return (<BookingButton/>)
 };
 
 export default Home;

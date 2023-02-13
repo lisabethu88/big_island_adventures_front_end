@@ -12,13 +12,14 @@ import ConfirmBooking from "./pages/ConfirmBooking"
 import BookingButton from "./components/BookingButton"
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
+import About from './pages/About'
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
     <TopNavBar/>
-    <BookingButton/>
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsPage />} />
