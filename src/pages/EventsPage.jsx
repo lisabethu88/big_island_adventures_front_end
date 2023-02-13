@@ -3,7 +3,11 @@ import BottomNavBar from "../components/BottomNavBar.js";
 
 const EventsPage = () => {
     return (
-     <BottomNavBar/>
+      <>
+        <BottomNavBar/>
+      </>
+
+
     )
 };
 export default EventsPage;
