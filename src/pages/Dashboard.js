@@ -15,37 +15,34 @@ const Dashboard = () => {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th colSpan={4}>Customer info</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>event name</td>
+            <td>date</td>
+            <td>tickets number</td>
+            <td>status</td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td colSpan={2}>Larry the Bird</td>
-            <td>@twitter</td>
+            <th colSpan={4}>
+              {" "}
+              <Link to="/">
+                <Button variant="secondary" className="go-back-btn">
+                  Go Back
+                </Button>
+              </Link>
+            </th>
           </tr>
         </tbody>
       </Table>
-      <Link to="/">
-        <Button variant="secondary" className="go-back-btn">
-          Go Back
-        </Button>
-      </Link>
     </main>
   );
 };
