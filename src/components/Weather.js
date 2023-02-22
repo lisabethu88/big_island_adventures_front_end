@@ -3,6 +3,7 @@ import moment from "moment";
 import "./Weather.css";
 import { Row, Card } from "react-bootstrap";
 
+
 const Weather = (props) => {
   const getTempIconPhraseData = props.forecast.map((eachData, index) => {
     return (
