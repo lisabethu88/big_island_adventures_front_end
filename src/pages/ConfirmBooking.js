@@ -83,7 +83,7 @@ const ConfirmBooking = () => {
         </section>
 
         <section className="tickets-container">
-          <Form.Label className="ticket-label all-labels">Tickets</Form.Label>
+          <Form.Label className="all-labels">Tickets</Form.Label>
           <br />
           <Form.Text>{booking.tickets}</Form.Text>
           <br />

@@ -85,11 +85,11 @@ const Dashboard = () => {
           </thead>
           <tbody>
             <tr>
-              <td>event name</td>
-              <td>date</td>
-              <td>tickets number</td>
-              <td>total price</td>
-              <td>status</td>
+              <td>Tour</td>
+              <td>Date</td>
+              <td>Tickets Purchased</td>
+              <td>Total Price</td>
+              <td>Status</td>
             </tr>
             {printOutDatas}
             <tr>

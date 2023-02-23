@@ -119,7 +119,7 @@ const BookingForm = ({
       </section>
 
       <section className="tickets-container">
-        <Form.Label className="ticket-label all-labels">Tickets</Form.Label>
+        <Form.Label className="all-labels">Tickets</Form.Label>
         <br />
         <section className="add-tickets">
           <Button variant="secondary" className="ticket-btns" onClick={decreaseTickets}>
