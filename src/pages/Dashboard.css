@@ -1,7 +1,8 @@
 .info-table {
   margin: auto;
   width: 90%;
-  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 th {
@@ -10,4 +11,5 @@ th {
 
 ol {
   list-style: none;
+ 
 }

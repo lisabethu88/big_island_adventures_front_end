@@ -11,11 +11,11 @@ const Footer = () => {
           <Col className="text-center py-1">
           <section className="footer-links">
           <p className="text-center mt-4 mb-4">
-            Street name and number City, Country
+          2800 Ainaola Dr Hilo HI 96720-3540 USA
           </p>
-          <p className="text-center mt-4 mb-4">(+00) 0000 000 000</p>
-          <p className="text-center mt-4 mb-4">office@company.com</p>
-          <p className="text-center mt-4 mb-4">Company Name &copy; 2023</p>
+          <p className="text-center mt-4 mb-4">(+1) 808 256 0913</p>
+          <p className="text-center mt-4 mb-4">contact@bigislandadventures.com</p>
+          <p className="text-center mt-4 mb-4">Big Island Adventures &copy; 2023</p>
           </section>
           </Col>
         </Row>

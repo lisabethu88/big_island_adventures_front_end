@@ -54,7 +54,7 @@ function TopNav() {
         <Container className="navbar-container">
           <Link className="BIA-logo-link" to="/">
             <Navbar.Brand href="#home" className="BIA-logo-text">
-              <img className="turtle-logo" src={logo1} alt="Turtle logo" />
+              <img className="turtle-logo" src={logo2} alt="Turtle logo" />
             </Navbar.Brand> 
             </Link>
             <Navbar.Text className="header-links">

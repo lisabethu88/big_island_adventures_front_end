@@ -158,7 +158,7 @@ const EventsPage = () => {
   };
 
   // ----------- getting data before rendering -------------------------
-  useEffect(() => {
+   useEffect(() => {
     getAllForecastData(weatherLocation)
       .then((dailyForecast) => {
         setForecast(dailyForecast);
@@ -183,7 +183,7 @@ const EventsPage = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, [forecast]);
+  }, [forecast]); 
 
   useEffect(() => {
     getAllTours();
@@ -201,21 +201,21 @@ const EventsPage = () => {
   }, [filters]);
 
   return (
-    <main className="main-events">
+    <main >
       <section>
         <SecNav page={page} />
       </section>
 
-      <section className="weather-calendar-container">
+      <section className="main-events ">
+      
         <section className="weather-section">
           <section className="weather-location">
-            <div>
-              <h4>Get tour suggestions based on weather</h4>
+              <h5 className="weather-title">Choose a Region to View 5-day Weather 
+              Forecast and Tour Suggestions</h5>
               <WeatherLocationSelecter
                 weatherLocation={weatherLocation}
                 setweatherLocation={setweatherLocation}
               />
-            </div>
           </section>
           <Weather
             forecast={forecast}
@@ -227,18 +227,9 @@ const EventsPage = () => {
           </section>
         </section>
       </section>
-
+      <section className="event-card-container">
+      <h1 className="weather-title  tours-title">Available Tours</h1>
       <section className="query-choices">
-      <section className="calendar-container">
-          <DatePicker
-            placeholderText="Choose by date"
-            variant="secondary"
-            popperPlacement="bottom"
-            className="calendar"
-            selected={startDate}
-            onChange={(date) => handleDateChange(date)}
-          />
-        </section>
         <section>
           <Button
             className="show-all-btn"
@@ -248,6 +239,16 @@ const EventsPage = () => {
             Show All
           </Button>
         </section>
+        <section className="calendar-container">
+          <DatePicker
+            placeholderText="Choose by date"
+            variant="secondary"
+            popperPlacement="bottom"
+            className="calendar"
+            selected={startDate}
+            onChange={(date) => handleDateChange(date)}
+          />
+        </section>
         <FilterCheckboxes
           className="filter-checkbox"
           filterOptions={filterMenuOptions}
@@ -256,7 +257,6 @@ const EventsPage = () => {
         />
       </section>
 
-      <section className="event-card-container">
         <EventsList tours={tours} />
       </section>
     </main>
